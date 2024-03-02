@@ -7,6 +7,9 @@ import os
 import search_berserk
 from dotenv import load_dotenv
 from enum import Enum
+from VincentCode.Vincent import *
+from CalebCode.Vincent import *
+from ZackCode.Vincent import *
 
 load_dotenv()
 
