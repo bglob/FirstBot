@@ -22,9 +22,7 @@ berserk_web = search_berserk.BerserkWeb()
 no_result_message = '''Sorry, we can\'t find what you are searching for.'''
 
 class GuildID(Enum):
-    testServer = 1118210036154515496
-    leagueServer = 1090509064791932930
-
+    wormServer = 1125538631650644128
 # This is old code but you can copy from it
 # def storeChapter(value):
 #     f = open("stored.txt","w")
@@ -87,8 +85,7 @@ class GuildID(Enum):
 @client.event
 async def on_ready():
     os.system('cls')
-    await tree.sync(guild=discord.Object(id=GuildID.leagueServer.value))
-    await tree.sync(guild=discord.Object(id=GuildID.testServer.value))
+    await tree.sync(guild=discord.Object(id=GuildID.wormServer.value))
     print('We have logged in as {0.user}'.format(client))
 
 # This is an old slash command
